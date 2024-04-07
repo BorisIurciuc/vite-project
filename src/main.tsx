@@ -2,14 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 //import App from './App.tsx'
 import './index.css'
-//import RandomDog from './assets/components/RandomDog/RandomDog.tsx'
-import ExchangeApi from './assets/components/ExchangeApi/ExchangeApi.tsx'
+import UsersArraySelectForm from './assets/components/UsersArraySelect/UsersArraySelectForm.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-         
-         <ExchangeApi />
-
-   
+    <UsersArraySelectForm />
   </React.StrictMode>,
 )

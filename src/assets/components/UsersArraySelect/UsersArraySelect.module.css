@@ -1,0 +1,10 @@
+.container{
+    margin: 5px;
+    padding: 5px;
+    width: 450px;
+    border: solid 1px white;
+}
+
+p{
+    background-color: rgb(59, 59, 59);
+}
