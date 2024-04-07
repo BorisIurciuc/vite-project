@@ -18,7 +18,7 @@ export default function UsersArraySelectForm():JSX.Element {
 
   return (
       <div className={style.container}>
-        <h4>Search for user by ID number</h4>
+        <h4>Search for a user by ID number</h4>
         <form onSubmit={handleSubmit}  className={style.formStyle}>
           <input 
             type="number"
