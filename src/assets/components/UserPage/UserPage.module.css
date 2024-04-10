@@ -1,0 +1,14 @@
+.containerUP{
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 12px 1px rgba(237, 236, 236, 0.2);
+}
+h4{
+    border: solid 0.5px gray;
+    width: 100%;
+    
+}
