@@ -18,9 +18,9 @@ export default function Users(): JSX.Element {
 
   return (
     <div>Список пользователей (Users)
-        <ol className={style.conteinerUsers}>
+        <ol className={style.conteinerUsers} >
             {users.map((user) => (
-                <li className={style.liUsers}>
+                <li className={style.liUsers} key={user.id}>
                     <p>{user.username}</p>
                     <Link to={`${user.id}`}>Данные пользователя</Link>
                 </li>

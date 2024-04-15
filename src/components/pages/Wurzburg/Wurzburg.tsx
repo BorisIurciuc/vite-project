@@ -28,7 +28,9 @@ export default function Wurzburg(): JSX.Element {
                 <img className={style.imageW}
                 src="https://www.merian.de/uploads/media/1920x1080/00/5970-Wu%CC%88rzburg-Mainufer.webp?v=1-0" alt="" />
             </div>
-        
+            <div className={style.containerW}>
+            <FetchWeater />
+            </div>
             </>
         </div>
 

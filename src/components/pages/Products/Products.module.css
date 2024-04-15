@@ -1,0 +1,21 @@
+.containerProducts{
+    background-color: cadetblue;
+}
+.ulProducts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.liProducts{
+    margin: 2px;
+    padding: 2px;
+    width: 25%; 
+    height: 100%;
+    background-color: darkseagreen;
+}
+.imageProducts{
+    width: 100%;
+}

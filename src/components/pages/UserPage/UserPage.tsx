@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import style from './UserPage.module.css'
-import User from '../Users/type/User'
+import User from '../../Users/type/User'
 import { Link, useParams } from 'react-router-dom'
 
 export default function UserPage(): JSX.Element {
