@@ -1,6 +1,5 @@
-import React from 'react'
 import './App.css'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Layout from './components/common/Layout/Layout'
 import Users from './components/pages/Users/Users'
 import Wurzburg from './components/pages/Wurzburg/Wurzburg'
@@ -11,6 +10,7 @@ import TitleImage from './components/pages/TitleImage/TitleImage'
 import Products from './components/pages/Products/Products'
 import ProductPage from './components/pages/ProductPage/ProductPage'
 import StartPage from './components/pages/StartPage/StartPage'
+import Chucknorris from './components/pages/Chucknorris/Chucknorris'
 
 function App(): JSX.Element {
  
@@ -26,6 +26,7 @@ function App(): JSX.Element {
         <Route path='/products' element={<Products />} />
         <Route path='/products/:productId' element={<ProductPage />} />
         <Route path='/btnTest' element={<BtnTest />} />
+        <Route path='/Chucknorris' element={<Chucknorris />} />
       </Route>
     </Routes>
   );

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import style from './NavBar.module.css'
 import { NavLink } from 'react-router-dom'
 
@@ -13,7 +13,7 @@ export default function NavBar(): JSX.Element {
             <li><NavLink to="/titleImage" className={style.navElement}>TitleImage</NavLink></li>
             <li><NavLink to="/products" className={style.navElement}>Products</NavLink></li>
             <li><NavLink to="/BtnTest" className={style.navElement}>BtnTest</NavLink></li>
-
+            <li><NavLink to="/Chucknorris" className={style.navElement}>Chucknorris</NavLink></li>
         </ul>
     </nav>
   )
