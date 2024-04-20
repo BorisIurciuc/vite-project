@@ -11,6 +11,7 @@ import Products from './components/pages/Products/Products'
 import ProductPage from './components/pages/ProductPage/ProductPage'
 import StartPage from './components/pages/StartPage/StartPage'
 import Chucknorris from './components/pages/Chucknorris/Chucknorris'
+import Wines from './components/pages/Wines/Wines'
 
 function App(): JSX.Element {
  
@@ -27,6 +28,7 @@ function App(): JSX.Element {
         <Route path='/products/:productId' element={<ProductPage />} />
         <Route path='/btnTest' element={<BtnTest />} />
         <Route path='/Chucknorris' element={<Chucknorris />} />
+        <Route path='/wines' element={<Wines />} />
       </Route>
     </Routes>
   );
