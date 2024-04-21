@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import style from './Users.module.css'
 import User from './type/User'
 import { Link } from 'react-router-dom';

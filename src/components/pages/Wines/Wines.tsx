@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import IWine from './type/IWine';
 import style from './WInes.module.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -24,25 +25,24 @@ export default function Wines(): JSX.Element {
 
     return (
         <>
-        <h1>Wines</h1>
+        <h1>Ассортимент вин</h1>
         <p>
             Ассортимент вин в ресторане представляет собой разнообразие сортов и марок вин, 
             предназначенных для удовлетворения вкусовых предпочтений посетителей. Ресторан стремится предложить широкий выбор 
-            красных, белых и розовых вин различных сортов, регионов и винодельческих хозяйств.
-            Все это создает атмосферу изысканности и роскоши, способствуя полному и неповторимому впечатлению от посещения ресторана.
+            красных, белых и розовых вин лучших сортов, регионов и винодельческих хозяйств.
+            Все это создает атмосферу изысканности и роскоши, способствуя неповторимому впечатлению от посещения ресторана.
         </p>
         <div className={style.wineContainer}>
             {highRatingWines.map((wineData) => (
-                <div 
-                    key={wineData.id} 
-                >
+                <div key={wineData.id} >
                     <h3>{wineData.wine}</h3>
                     <p>{wineData.winery}</p>
                     <img 
                         src={wineData.image} 
                         alt="image wine" 
-                        style = {wineData.rating.average >= 4.9 ? {backgroundColor: 'rgb(250, 248, 122)' } : {backgroundColor: "lightgrey" }}/>
+                        style = {wineData.rating.average >= 4.9 ? {backgroundColor: 'rgb(250, 248, 122)' } : {backgroundColor: "hsl(205, 90%, 76%)" }}/>
                     <p>raiting:{wineData.rating.average}</p>
+                    <Link to={`${wineData.id}`}>Подробнее</Link>
                 </div>
             ))}
         </div>

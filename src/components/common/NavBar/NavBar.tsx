@@ -11,10 +11,11 @@ export default function NavBar(): JSX.Element {
             <li><NavLink to="/wurzburg" className={style.navElement}>Wurzburg</NavLink></li>
             <li><NavLink to="/bayernSalad" className={style.navElement}>BayernSalad</NavLink></li>
             <li><NavLink to="/titleImage" className={style.navElement}>TitleImage</NavLink></li>
-            <li><NavLink to="/products" className={style.navElement}>Products</NavLink></li>
             <li><NavLink to="/BtnTest" className={style.navElement}>BtnTest</NavLink></li>
             <li><NavLink to="/Chucknorris" className={style.navElement}>Chucknorris</NavLink></li>
             <li><NavLink to="/wines" className={style.navElement}>Wines</NavLink></li>
+            <li><NavLink to="/menuApp" className={style.navElement}>MenuApp</NavLink></li>
+
         </ul>
     </nav>
   )

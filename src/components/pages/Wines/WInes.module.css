@@ -1,21 +1,26 @@
 .wineContainer{
     margin: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .wineContainer p{
+    margin: 2px;
+    padding: 2px;
     text-align: center;
 }
 
 .wineContainer div{
-    height: 1000px;
+    height: 800px;
 }
 
 .wineContainer h3{
     max-height: 15%;
-   
+    padding: 2px;
 }
+.wineContainer img{
+    width: 150px;
 
+}
 

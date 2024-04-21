@@ -7,11 +7,11 @@ import UserPage from './components/pages/UserPage/UserPage'
 import BtnTest from './components/pages/BtnTest/BtnTest'
 import BayernSalad from './components/pages/BayernSalad/BayernSalad'
 import TitleImage from './components/pages/TitleImage/TitleImage'
-import Products from './components/pages/Products/Products'
-import ProductPage from './components/pages/ProductPage/ProductPage'
 import StartPage from './components/pages/StartPage/StartPage'
 import Chucknorris from './components/pages/Chucknorris/Chucknorris'
 import Wines from './components/pages/Wines/Wines'
+import WInePage from './components/pages/WInePage/WInePage'
+import MenuApp from './components/pages/Menu/MenuApp'
 
 function App(): JSX.Element {
  
@@ -24,11 +24,11 @@ function App(): JSX.Element {
         <Route path='/wurzburg' element={<Wurzburg />} />
         <Route path='/bayernSalad' element={<BayernSalad />} />
         <Route path='/titleImage' element={<TitleImage />} />
-        <Route path='/products' element={<Products />} />
-        <Route path='/products/:productId' element={<ProductPage />} />
         <Route path='/btnTest' element={<BtnTest />} />
         <Route path='/Chucknorris' element={<Chucknorris />} />
         <Route path='/wines' element={<Wines />} />
+        <Route path='/wines/:wineId' element={<WInePage />} />
+        <Route path='/menuApp' element={<MenuApp />} />
       </Route>
     </Routes>
   );

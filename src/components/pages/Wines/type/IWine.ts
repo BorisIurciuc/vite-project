@@ -5,5 +5,6 @@ export default interface IWine {
         average: number,
     }
     image: string,
+    location: string;
     id: number,
 }
