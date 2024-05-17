@@ -1,4 +1,3 @@
-import React from 'react';
 import style from './Wurzburg.module.css';
 import FetchWeater from '../FetchWeater/FetchWeater';
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import style from './StartPage.module.css'
 
 export default function StartPage(): JSX.Element {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import style from './ToDoListClients.module.css'
 
 
@@ -19,7 +19,7 @@ export default function ToDoListClients(): JSX.Element {
         setTasks(newTask);
     }
 
-  return (
+    return (
     <div>
     <div className={style.containerToDo}>Имя:
         <input type="text"
@@ -28,7 +28,6 @@ export default function ToDoListClients(): JSX.Element {
         placeholder='Enter new data'
         />
         <button onClick={addTask} className={style.btn}>Add task</button>
-       
         </div>
         <ul className={style.ulContainer}>
             {tasks.map((task, index) => (
@@ -44,5 +43,5 @@ export default function ToDoListClients(): JSX.Element {
     
 
     </div>
-  )
+    )
 }

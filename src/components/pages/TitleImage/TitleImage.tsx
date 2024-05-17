@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import MyButton from "../../common/MyButton/MyButton";
 
 const TitleImage: FC=() => {

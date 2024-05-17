@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import style from './BtnCounter.module.css'
 
 export default function BtnCounter(): JSX.Element {

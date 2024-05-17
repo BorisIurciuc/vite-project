@@ -1,34 +1,39 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Menu from "./Menu";
 import Categories from "./Categories";
 import menu from './data';
 import MenuItem from "./IMenuItem";
-import React, { useState } from "react";
+import { useState } from "react";
 
-
+// Извлечение всех уникальных категорий и добавление "all" в начало массива
 const allCategories: string[] = ['all', ...new Set(menu.map((item) => item.category))];
 
 const MenuApp: React.FC = () => {
+    // Использование состояния для меню и категорий
     const [menuItems, setMenuItems] = useState<MenuItem[]>(menu);
-    const [categories, setCategories] = useState<string[]>(allCategories);
+    const [categories] = useState<string[]>(allCategories);
 
+    // Функция для фильтрации элементов по категории
     const filterItems = (category: string) => {
-        if (category === 'all'){
+        if (category === 'all') {
             setMenuItems(menu);
-            return;
+        } else {
+            const newItems = menu.filter((item) => item.category === category);
+            setMenuItems(newItems);
         }
-        const newItems = menu.filter((item) => item.category === category);
-        setMenuItems(newItems);
-    }
+    };
 
-    return(
-        <section >
-                <h2>Our Menu</h2>
-                <Categories categories={categories} filterItems={filterItems} />
-
-                <div >
+    return (
+        <section>
+            <h2>Our Menu</h2>
+            {/* Передача категорий и функции фильтрации в компонент Categories */}
+            <Categories categories={categories} filterItems={filterItems} />
+            <div>
+                {/* Передача отфильтрованных элементов меню в компонент Menu */}
                 <Menu items={menuItems} />
             </div>
         </section>
-    )
-}
+    );
+};
+
 export default MenuApp;
