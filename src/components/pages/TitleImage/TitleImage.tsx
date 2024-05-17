@@ -4,7 +4,7 @@ import MyButton from "../../common/MyButton/MyButton";
 const TitleImage: FC=() => {
 
     const facade = {
-        name: 'Weinhaus',
+        name: 'Alter Müller',
         title: "fine dining restaurant",
         imgUrl: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/29/7c/64/tradition-seit-1413.jpg?w=1800&h=-1&s=1'
 
@@ -28,9 +28,6 @@ const TitleImage: FC=() => {
             return !isFacade;
         });
     }
-    console.log(isFacade);
-    console.log(facade);
-    console.log(interior);
 
     return(
         <div className="div.container">
