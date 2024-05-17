@@ -1,7 +1,7 @@
 import Menu from "./Menu";
 import Categories from "./Categories";
 import menu from './data';
-import MenuItem from "./MenuItem";
+import MenuItem from "./IMenuItem";
 import React, { useState } from "react";
 
 
@@ -32,5 +32,3 @@ const MenuApp: React.FC = () => {
     )
 }
 export default MenuApp;
-
-//className={style.sectionMenuApp}

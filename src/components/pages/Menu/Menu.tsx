@@ -1,4 +1,4 @@
-import MenuItem from "./MenuItem";
+import MenuItem from "./IMenuItem";
 import style from './Menu.module.css'
 
 const Menu: React.FC<{ items: MenuItem[] }> = ({ items }) => {
